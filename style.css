@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   justify-content: center;
-  flex-flow: row wrap;
+  /*flex-flow: row wrap;*/
 }
 
 .box {
@@ -18,9 +18,17 @@
 .box:first-child {
   background-color: tomato;
   flex-grow: 1;
+  flex-shrink: 3;
+}
+
+.box:nth-child(2) {
+  background-color: orange;
+  flex-grow: 2;
+  flex-shrink: 0;
 }
 
 .box:last-child {
   background-color: teal;
-  flex-grow: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
